@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/img.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#top-bar {
+    background: rgba(81, 80, 80, 0.546);
+    text-align: center;
+
+}
+
+#top-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: rgb(22, 20, 20);
+}
+
+#top-bar ul li {
+    width: 100px;
+    margin: 15px;
+    padding: 10px;
+}
+
+#top-bar ul li a {
+    text-decoration: none;
+    color: rgb(237, 225, 225);
+}
+
+#home,
+#top-bar ul li:hover {
+    background: rgba(215, 210, 210, 0.404);
+
+}
+
+#top-bar .fa {
+    margin-right: 8px;
+}
+
+.top-bar1 {
+    display: none;
+}
+
+#top-bar ul li:hover .top-bar1 {
+    display: block;
+    position: absolute;
+    background: rgba(81, 80, 80, 0.546);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+#top-bar ul li:hover .top-bar1 ul {
+    display: block;
+    margin: 10px;
+}
+
+#top-bar ul li:hover .top-bar1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgba(135, 129, 129, 0.438);
+    background: rgba(143, 142, 142, 0.575);
+    border-radius: 25px;
+    text-align: left;
+
+}
+
+.top-bar2 {
+    display: none;
+}
+
+.hover-me:hover .top-bar2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgba(65, 63, 63, 0.345);
+
+}
